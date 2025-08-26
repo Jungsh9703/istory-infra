@@ -7,7 +7,7 @@ variable "aws_region" {
 variable "vpc_name" {
   description = "name of vpc"
   type        = string
-  default     = "dangtong"
+  default     = "sh"
 }
 
 variable "cluster_name" {

@@ -121,7 +121,8 @@ resource "helm_release" "aws_efs_csi_driver" {
   }
 }
 module "attach_efs_csi_role" {
-  source = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
+  source  = "terraform-aws-modules/iam/aws//modules/iam-role-for-service-accounts-eks"
+  version = "~> 5.30"
 
   role_name             = "efs-csi"
   attach_efs_csi_policy = true
